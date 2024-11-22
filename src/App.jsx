@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-dom";
 import './App.css';
 import { ChessList } from './ChessList';
+import { ChessSingle} from './ChessSingle';
 
 export const App=()=> {
   return (
@@ -17,6 +18,7 @@ export const App=()=> {
       </nav>
       <Routes>
         <Route path="/" element={<ChessList />} />
+        <Route path="/chess/:chessId" element={<ChessSingle />} />
       </Routes>
     </Router>
   );

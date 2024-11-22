@@ -41,6 +41,8 @@ export const ChessList = () => {
                     <img src={chess.image_url ? chess.image_url : 
                         "https://via.placeholder.com/400x800"} alt={chess.name} 
                         className="img-fluid" style={{width: "200px"}}/></Link>
+                        <div className="text-center"><Link to={/chess/ + chess.id}>
+                        <i className="bi bi-command"></i></Link> </div>
                    </div>
                 </div>
                 </div>
